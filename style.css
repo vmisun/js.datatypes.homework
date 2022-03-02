@@ -53,8 +53,27 @@ i {
   width: 50%;
 }
 
-.weatherToday .degrees:hover {
+#celsius {
+  padding: 0 5px;
+  margin: -5px;
+}
+
+.weatherToday #celsius:hover {
   cursor: pointer;
+  background-color: #b3bafdd5;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+#fahrenheit {
+  padding: 0 3px;
+  padding: 0 5px;
+}
+
+.weatherToday #fahrenheit:hover {
+  cursor: pointer;
+  background-color: #b3bafdd5;
+  border-radius: 5px;
 }
 
 .weather .column {
