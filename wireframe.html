@@ -21,21 +21,30 @@
   </head>
   <body>
     <div class="container">
-      <div class="searchBar">
-        <input type="text" class="typeyour" placeholder="Type your city" />
+      <form class="searchBar">
+        <input
+          type="text"
+          class="typeyour"
+          id="search-bar"
+          placeholder="Type your city"
+        />
         <button type="button" class="btn btn-outline-secondary">
           <i class="fa-solid fa-location-crosshairs"></i>
         </button>
-        <button type="button" class="btn btn-outline-secondary">
+        <button
+          type="submit"
+          class="btn btn-outline-secondary"
+          id="search-button"
+        >
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-      </div>
+      </form>
       <div class="row weatherToday">
         <h1>Kraków</h1>
         <div class="column">
-          <p>Thursday 17.02.2022</p>
+          <p id="date">Thursday 17.02.2022</p>
           <br />
-          <p>5:00:32 PM</p>
+          <p id="time">5:00:32 PM</p>
           <br />
           <p>Wind: 34 km/h</p>
           <br />
@@ -43,7 +52,11 @@
         <div class="column todayRightColumn">
           <i class="fa-solid fa-sun"></i>
           <h2>
-            9<span class="degrees">°C <span class="normal"> |°F</span></spa>
+            <span id="degrees">9</span>
+            <span class="degrees">
+              <a href="#" id="celsius-link">°C</a>
+              |<a href="#" id="fahrenheit-link">°F</a>
+            </span>
           </h2>
         </div>
       </div>
@@ -56,32 +69,27 @@
         <div class="column">
           <i class="fa-solid fa-cloud-sun"></i>
           <h3>Wed</h3>
-          <p>12<span class="degrees">°C</span>
-          </p>
+          <p>12<span class="degrees">°C</span></p>
         </div>
         <div class="column">
           <i class="fa-solid fa-sun"></i>
           <h3>Thu</h3>
-           <p>18<span class="degrees">°C</span>
-          </p>
+          <p>18<span class="degrees">°C</span></p>
         </div>
         <div class="column">
           <i class="fa-solid fa-sun"></i>
           <h3>Fri</h3>
-           <p>19<span class="degrees">°C</span>
-          </p>
+          <p>19<span class="degrees">°C</span></p>
         </div>
         <div class="column">
           <i class="fa-solid fa-cloud"></i>
           <h3>Sat</h3>
-           <p>12<span class="degrees">°C</span>
-          </p>
+          <p>12<span class="degrees">°C</span></p>
         </div>
         <div class="column">
           <i class="fa-solid fa-cloud-sun"></i>
           <h3>Sun</h3>
-           <p>15<span class="degrees">°C</span>
-          </p>
+          <p>15<span class="degrees">°C</span></p>
         </div>
       </div>
     </div>
